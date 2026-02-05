@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="music-control">
+    <audio id="bg-music" loop>
+        <source src="cavemen.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="document.getElementById('bg-music').play()">
+        🎶 Tap to play our song
+    </button>
+</div>
+
+
+<head>
+  <meta charset="UTF-8">
+  <title>Will You Be My Valentine?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Heyyyyy My Love ❤️</h1>
+    <h2>From me, with love always, my precious gift.</h2>
+
+    <div class="gallery">
+  <div class="photo">
+    <span class="tag">Loml</span>
+    <img src="photo1.jpg" alt="Loml">
+  </div>
+
+  <div class="photo">
+    <span class="tag">Us together</span>
+    <img src="photo2.jpg" alt="Us together">
+  </div>
+
+  <div class="photo">
+    <span class="tag">Me</span>
+    <img src="photo3.jpg" alt="Me">
+  </div>
+
+  <div class="photo">
+    <span class="tag">Memories ❤️</span>
+    <img src="photo4.jpg" alt="Memories">
+  </div>
+
+  <div class="photo">
+    <span class="tag">The FOs ❤️</span>
+    <img src="photo5.jpg" alt="The FOs">
+  </div>
+
+  <div class="photo">
+    <span class="tag">Nkem ❤️</span>
+    <img src="photo6.jpg" alt="Nkem">
+  </div>
+</div>
+
+
+    <div class="message">
+      <p>
+        From the moment you walked into my life on that sunday, something shifted in the best way.
+        You brought warmth where there was calm, laughter where there was silence,
+        and meaning in ways I didn’t even know I was searching for.
+        Being with you has shown me what it truly means to choose someone,
+        not out of habit, not out of convenience, but with intention, faith, and a full heart. 
+        Every conversation, every shared pain, 
+        every quiet moment reminds me that loving you is not something I do by chance, but by choice.
+        You inspire me to be better, to love deeper, and to stay true. 
+        In you, I’ve found peace(small wahala), strength, 
+        and a love that feels both gentle and powerful at the same time. 
+        You are not just someone I care about, you are someone I value, respect, and choose daily.
+        So today, with a heart that is certain and sincere, 
+        I want to ask you something simple but meaningful.
+        Not just for today, but as a celebration of us, our moments, 
+        and everything that continues to grow between us.
+      </p>
+      <p>
+        I choose you — faithfully, intentionally, and completely.
+      </p>
+    </div>
+
+    <div class="question">
+      Will you be my Valentine? 💕
+    </div>
+
+    <div class="buttons">
+      <button class="yes" onclick="window.location.href='yes.html'">Yes ❤️</button>
+      <button class="no" onclick="alert('That button is just for decoration 😌')">Of course 🥰</button>
+    </div>
+  </div>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = "❤";
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.fontSize = Math.random() * 20 + 10 + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 6000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+</body>
+</html>
